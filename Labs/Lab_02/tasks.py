@@ -581,3 +581,313 @@ student = {
 
 
 print()
+
+# ============================================================
+# Task 17 — Time Decomposition
+# ============================================================
+
+print("Task 17 — Time Decomposition")
+
+# Ask the user to enter a duration in seconds.
+#
+# Example:
+# 9374
+#
+# Convert it into:
+# hours
+# minutes
+# seconds
+#
+# Expected:
+# 9374 seconds = 2 hour(s), 36 minute(s), 14 second(s)
+#
+# Use only:
+# int()
+# //
+# %
+# arithmetic
+# f-strings
+
+total_seconds = 0
+
+# TODO:
+# Read total_seconds from the user.
+
+hours = 0
+remaining_seconds = 0
+minutes = 0
+seconds = 0
+
+# TODO:
+# Calculate all four values.
+
+# TODO:
+# Print the formatted result.
+
+
+print()
+
+
+# ============================================================
+# Task 18 — Order Invoice
+# ============================================================
+
+print("Task 18 — Order Invoice")
+
+# A customer buys three different products.
+#
+# Ask for:
+# product 1 price and quantity
+# product 2 price and quantity
+# product 3 price and quantity
+#
+# Calculate:
+# subtotal for every product
+# total before tax
+# tax = 5%
+# final total
+#
+# Example output:
+#
+# Product 1: 1200.00
+# Product 2: 750.00
+# Product 3: 400.00
+# --------------------
+# Subtotal: 2350.00
+# Tax: 117.50
+# Total: 2467.50
+#
+# Do not use if, loops, or functions.
+
+price_1 = 0.0
+quantity_1 = 0
+
+price_2 = 0.0
+quantity_2 = 0
+
+price_3 = 0.0
+quantity_3 = 0
+
+# TODO:
+# Read all six values.
+
+product_1_total = 0.0
+product_2_total = 0.0
+product_3_total = 0.0
+
+subtotal = 0.0
+tax = 0.0
+final_total = 0.0
+
+# TODO:
+# Perform the calculations.
+
+# TODO:
+# Print a clean invoice using f-strings.
+
+
+print()
+
+
+# ============================================================
+# Task 19 — Coordinate Analysis
+# ============================================================
+
+print("Task 19 — Coordinate Analysis")
+
+# Ask the user for two points:
+#
+# (x1, y1)
+# (x2, y2)
+#
+# Store each point as a tuple.
+#
+# Calculate:
+#
+# difference in x
+# difference in y
+# squared distance
+# distance
+#
+# Formula:
+#
+# distance = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+#
+# Print both points and the calculated distance.
+
+x1 = 0.0
+y1 = 0.0
+x2 = 0.0
+y2 = 0.0
+
+# TODO:
+# Read the four coordinates.
+
+point_1 = ()
+point_2 = ()
+
+# TODO:
+# Create the two tuples.
+
+delta_x = 0.0
+delta_y = 0.0
+distance_squared = 0.0
+distance = 0.0
+
+# TODO:
+# Perform the calculations.
+
+# TODO:
+# Print the result with two decimal places.
+
+
+print()
+
+
+# ============================================================
+# Task 20 — Working with Complex Numbers
+# ============================================================
+
+print("Task 20 — Complex Numbers")
+
+# Section 2 includes Python's basic data types.
+# One numerical type that is easy to forget is complex.
+#
+# Given:
+
+z1 = 3 + 4j
+z2 = 2 - 1j
+
+# TODO:
+# Print:
+#
+# z1
+# z2
+# type(z1)
+# z1 + z2
+# z1 - z2
+# z1 * z2
+# z1 / z2
+#
+# Also print:
+#
+# z1.real
+# z1.imag
+#
+# Predict the type of each arithmetic result before running it.
+
+
+print()
+
+
+# ============================================================
+# Task 21 — Student Data Record
+# ============================================================
+
+print("Task 21 — Student Data Record")
+
+# Ask the user for:
+#
+# name
+# age
+# university
+# first score
+# second score
+# third score
+#
+# Store the scores in a list.
+#
+# Store all student information in a dictionary:
+#
+# {
+#     "name": ...,
+#     "age": ...,
+#     "university": ...,
+#     "scores": [...]
+# }
+#
+# Then calculate:
+#
+# number of scores
+# minimum score
+# maximum score
+# mean score
+#
+# Print a formatted student report.
+#
+# Do not use loops.
+
+student_name = ""
+student_age = 0
+university = ""
+
+score_1 = 0.0
+score_2 = 0.0
+score_3 = 0.0
+
+scores = []
+student = {}
+
+# TODO:
+# Read the values.
+
+# TODO:
+# Create scores.
+
+# TODO:
+# Create student.
+
+score_count = 0
+minimum_score = 0.0
+maximum_score = 0.0
+mean_score = 0.0
+
+# TODO:
+# Calculate the statistics.
+
+# TODO:
+# Print a clean report.
+
+
+print()
+
+
+# ============================================================
+# Task 22 — Debug the Program
+# ============================================================
+
+print("Task 22 — Debug the Program")
+
+# The program below is supposed to calculate the average
+# of three scores entered by the user.
+#
+# It currently contains several problems.
+#
+# Find and fix them.
+#
+# Do NOT use if, try-except, loops, or functions.
+#
+# Think about:
+# - input() types
+# - variable names
+# - arithmetic
+# - operator precedence
+# - PEP 8
+# - formatted output
+
+
+# score1=input("Score 1: ")
+# Score2=input("Score 2: ")
+# score3=input("Score 3: ")
+# total=score1+Score2+score3
+# average=total/3
+# print("Average:"+average)
+
+
+# TODO:
+# Rewrite the program correctly below.
+
+
+print()
+
+
