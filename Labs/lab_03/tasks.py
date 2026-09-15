@@ -8,7 +8,6 @@ Tasks 13–14 are optional bonus tasks.
 Use only concepts covered in Lecture 03.
 """
 
-
 # ============================================================
 # Task 1 — Positive, negative, or zero
 # ============================================================
@@ -522,5 +521,294 @@ values = [10, 14, 13, 18, 22, 20, 25, 25, 30]
 # for row in range(...):
 #     for column in range(...):
 #         ...
+
+# Write your code below:
+
+# ============================================================
+# EXTRA Task 25 — Second largest value
+# ============================================================
+numbers = [12, 7, 19, 3, 19, 14, 8]
+
+# Find the second largest DISTINCT value.
+#
+# Expected:
+# Second largest: 14
+#
+# Do NOT use:
+#   sorted()
+#   max()
+#
+# Hint:
+# Keep track of:
+#   largest
+#   second_largest
+#
+# Be careful with duplicate values.
+
+# Write your code below:
+
+
+# ============================================================
+# EXTRA Task 26 — Count consecutive positives
+# ============================================================
+numbers = [2, 5, 7, -1, 3, 4, 8, 9, -2, 6]
+
+# Find the longest sequence of consecutive positive numbers.
+#
+# Sequences:
+# 2, 5, 7       -> length 3
+# 3, 4, 8, 9    -> length 4
+# 6             -> length 1
+#
+# Expected:
+# Longest positive sequence: 4
+#
+# Hint:
+# Use:
+#   current_count
+#   longest_count
+
+# Write your code below:
+
+
+# ============================================================
+# EXTRA Task 27 — Number frequency
+# ============================================================
+numbers = [4, 2, 7, 4, 8, 4, 2, 9, 4, 1]
+
+# Ask the user for a number.
+#
+# Count how many times that number occurs in the list.
+#
+# Example:
+# Input: 4
+# Output:
+# Occurrences: 4
+#
+# Do NOT use:
+#   .count()
+
+# Write your code below:
+
+
+# ============================================================
+# EXTRA Task 28 — Simple password checker
+# ============================================================
+password = input("Enter password: ")
+
+# A valid password must:
+#   contain at least 8 characters
+#   contain at least one digit
+#   contain at least one uppercase English letter
+#
+# Print:
+#   Valid password
+# or
+#   Invalid password
+#
+# Do NOT use:
+#   any()
+#
+# Hint:
+# You can iterate over the password.
+#
+# Useful strings:
+digits = "0123456789"
+uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+# Write your code below:
+
+
+# ============================================================
+# EXTRA Task 29 — Local maximum
+# ============================================================
+values = [3, 7, 4, 8, 5, 9, 2, 6, 1]
+
+# A value is a local maximum if it is greater than
+# both the value before it and the value after it.
+#
+# Example:
+# 3, 7, 4
+#    ^
+# 7 is a local maximum.
+#
+# Find and print all local maxima.
+#
+# Do not check the first or last element.
+#
+# Expected:
+# 7
+# 8
+# 9
+# 6
+#
+# Hint:
+# Use indexes:
+# values[i - 1]
+# values[i]
+# values[i + 1]
+
+# Write your code below:
+
+
+# ============================================================
+# EXTRA Task 30 — Pair with target sum
+# ============================================================
+numbers = [2, 4, 7, 11, 15, 3]
+target = 10
+
+# Find two DIFFERENT elements whose sum is equal to target.
+#
+# Expected:
+# 7 + 3 = 10
+#
+# Required:
+# Use nested for loops.
+#
+# Stop when the first valid pair is found.
+#
+# Do NOT use:
+#   set()
+#
+# Hint:
+#
+# for i in range(...):
+#     for j in range(...):
+
+# Write your code below:
+
+
+# ============================================================
+# EXTRA Task 31 — Grade distribution
+# ============================================================
+scores = [95, 82, 67, 73, 58, 91, 49, 88, 76, 100, 61]
+
+# Count how many students received:
+#
+# A    -> 90–100
+# B    -> 75–89
+# C    -> 60–74
+# Fail -> below 60
+#
+# Print:
+# A: ...
+# B: ...
+# C: ...
+# Fail: ...
+#
+# Then determine which category contains the most students.
+#
+# Example:
+# Most common: B
+
+# Write your code below:
+
+
+# ============================================================
+# EXTRA Task 32 — Find duplicate values
+# ============================================================
+numbers = [4, 7, 2, 4, 9, 7, 5, 2]
+
+# Print every value that appears more than once.
+#
+# Expected:
+# 4
+# 7
+# 2
+#
+# Do not print the same duplicate more than once.
+#
+# For this task, try solving it with nested loops.
+#
+# Do NOT use:
+#   set()
+#   .count()
+
+# Write your code below:
+
+
+# ============================================================
+# EXTRA Task 33 — Closest number to target
+# ============================================================
+numbers = [5, 17, 23, 41, 8, 31]
+target = 20
+
+# Find the number closest to the target.
+#
+# Expected:
+# Closest: 17
+#
+# You may use:
+# abs()
+#
+# Do NOT use:
+# min()
+
+# Write your code below:
+
+
+# ============================================================
+# EXTRA Task 34 — Detect first repeated value
+# ============================================================
+numbers = [5, 3, 8, 2, 3, 9, 5]
+
+# Find the first value that appears for the second time.
+#
+# Reading from left to right:
+#
+# 5 -> first time
+# 3 -> first time
+# 8 -> first time
+# 2 -> first time
+# 3 -> repeated
+#
+# Expected:
+# First repeated: 3
+#
+# Stop searching immediately after finding it.
+#
+# Required:
+# Use break.
+
+# Write your code below:
+
+
+# ============================================================
+# EXTRA Task 35 — Prime numbers from 2 to 100
+# ============================================================
+# Print every prime number from 2 through 100.
+#
+# Expected beginning:
+# 2
+# 3
+# 5
+# 7
+# 11
+# ...
+#
+# Required:
+# Use nested for loops.
+#
+# Hint:
+# For each number, test whether another number divides it.
+#
+# Do NOT use external libraries.
+
+# Write your code below:
+
+
+# ============================================================
+# EXTRA Task 36 — Number triangle
+# ============================================================
+# Print:
+#
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+#
+# Required:
+# Use nested for loops.
 
 # Write your code below:
