@@ -7,7 +7,7 @@ if name:
 else:
     print("Name is empty")
 
-score = 72
+score = 59
 status = "Pass" if score >= 60 else "Fail"
 
 print("Status:", status)
