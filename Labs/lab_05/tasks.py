@@ -362,3 +362,289 @@ Do not use lambda, sorted(), filter(), or map() in this lab.
 # Do not use filter() or map().
 
 # Write your code below:
+
+
+# ============================================================
+# Task 15 — Function with validation
+# ============================================================
+# Create a function:
+#
+#   calculate_discount(price, discount=10)
+#
+# Requirements:
+# - price must be greater than 0;
+# - discount must be between 0 and 100.
+#
+# If the values are invalid, return None.
+#
+# Otherwise return the final price after applying the discount.
+#
+# Formula:
+# final_price = price - price * discount / 100
+#
+# Examples:
+# calculate_discount(100)     -> 90.0
+# calculate_discount(200, 25) -> 150.0
+# calculate_discount(100, 120) -> None
+# calculate_discount(-20, 10)  -> None
+
+# Write your code below:
+
+
+# ============================================================
+# Task 16 — Minimum and maximum with *args
+# ============================================================
+# Create a function:
+#
+#   score_range(*scores)
+#
+# If no scores are given, return None.
+#
+# Otherwise return the difference between
+# the largest and smallest score.
+#
+# Do NOT use max() or min().
+#
+# Use a loop to find the smallest and largest values.
+#
+# Examples:
+# score_range(10, 30, 20, 50) -> 40
+# score_range(5)               -> 0
+# score_range()                -> None
+
+# Write your code below:
+
+
+# ============================================================
+# Task 17 — Count values above a limit
+# ============================================================
+# Create a function:
+#
+#   count_above(limit, *numbers)
+#
+# Return how many numbers are greater than limit.
+#
+# Examples:
+# count_above(10, 5, 12, 30, 7, 20) -> 3
+# count_above(100, 10, 20, 30)       -> 0
+# count_above(5)                      -> 0
+#
+# Use a loop.
+
+# Write your code below:
+
+
+# ============================================================
+# Task 18 — **kwargs: configuration
+# ============================================================
+# Create a function:
+#
+#   show_settings(**settings)
+#
+# If no settings are given, print:
+#   No settings
+#
+# Otherwise print each setting:
+#
+#   key = value
+#
+# Example:
+#
+# show_settings(
+#     language="Python",
+#     version=3.12,
+#     debug=True
+# )
+#
+# Possible output:
+# language = Python
+# version = 3.12
+# debug = True
+
+# Write your code below:
+
+
+# ============================================================
+# Task 19 — math: distance between two points
+# ============================================================
+# Create a function:
+#
+#   distance(x1, y1, x2, y2)
+#
+# Calculate the Euclidean distance between two points.
+#
+# Formula:
+#
+# distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+#
+# Use math.sqrt().
+#
+# Example:
+# distance(0, 0, 3, 4) -> 5.0
+#
+# Import math.
+
+# Write your code below:
+
+
+# ============================================================
+# Task 20 — List operations: shopping list
+# ============================================================
+# Start with:
+#
+# shopping = ["bread", "milk", "eggs"]
+#
+# Perform these operations in order:
+#
+# 1. append "rice"
+# 2. insert "coffee" at index 1
+# 3. extend the list with ["tea", "sugar"]
+# 4. remove "milk"
+# 5. print the index of "eggs"
+# 6. print how many times "bread" appears
+# 7. pop the last item and store it in removed_item
+# 8. print the final shopping list
+# 9. print removed_item
+#
+# Expected final list:
+# ["bread", "coffee", "eggs", "rice", "tea"]
+
+# Write your code below:
+
+
+# ============================================================
+# Task 21 — CHALLENGE: Recursive power
+# ============================================================
+# Create a recursive function:
+#
+#   power(base, exponent)
+#
+# Assume exponent is a non-negative integer.
+#
+# Rules:
+# - if exponent == 0, return 1;
+# - otherwise:
+#
+#     base^exponent =
+#     base * base^(exponent - 1)
+#
+# Examples:
+# power(2, 5)  -> 32
+# power(3, 3)  -> 27
+# power(10, 0) -> 1
+#
+# Do NOT use **.
+# Do NOT use math.pow().
+# Do NOT use a loop.
+
+# Write your code below:
+
+
+# ============================================================
+# Task 22 — CHALLENGE: Recursive digit counter
+# ============================================================
+# Create a recursive function:
+#
+#   count_digits(n)
+#
+# Assume n is a non-negative integer.
+#
+# Return the number of digits in n.
+#
+# Examples:
+# count_digits(7)     -> 1
+# count_digits(1234)  -> 4
+# count_digits(10000) -> 5
+#
+# Hint:
+# Remove the last digit with:
+#
+#   n // 10
+#
+# Base case:
+# if n < 10:
+#     return 1
+#
+# Do NOT convert n to a string.
+# Do NOT use a loop.
+
+# Write your code below:
+
+
+# ============================================================
+# Task 23 — CHALLENGE: Recursive list sum
+# ============================================================
+# Create a recursive function:
+#
+#   recursive_sum(numbers)
+#
+# Return the sum of all numbers in the list.
+#
+# Examples:
+# recursive_sum([10, 20, 30]) -> 60
+# recursive_sum([5])          -> 5
+# recursive_sum([])           -> 0
+#
+# Hint:
+#
+# Base case:
+# if the list is empty:
+#     return 0
+#
+# Recursive idea:
+#
+# first element + sum of the remaining elements
+#
+# Do NOT use:
+# - sum()
+# - for
+# - while
+
+# Write your code below:
+
+
+# ============================================================
+# Task 24 — CHALLENGE: Exam statistics
+# ============================================================
+# Create a function:
+#
+#   exam_statistics(student, *scores, passing=60)
+#
+# If no scores are provided, return:
+#
+#   "No scores"
+#
+# Otherwise calculate:
+#
+# - average score
+# - highest score
+# - lowest score
+# - number of passed scores
+# - number of failed scores
+#
+# Do NOT use:
+# - min()
+# - max()
+# - sum()
+#
+# Calculate everything using a loop.
+#
+# Return a string like:
+#
+# "Anna: average=72.5, highest=90, lowest=50,
+#  passed=3, failed=1"
+#
+# Example:
+#
+# exam_statistics(
+#     "Anna",
+#     80, 70, 50, 90,
+#     passing=60
+# )
+#
+# returns:
+#
+# "Anna: average=72.5, highest=90, lowest=50,
+#  passed=3, failed=1"
+
+# Write your code below:
