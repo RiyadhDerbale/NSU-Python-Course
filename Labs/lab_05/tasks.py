@@ -648,3 +648,425 @@ Do not use lambda, sorted(), filter(), or map() in this lab.
 #  passed=3, failed=1"
 
 # Write your code below:
+# ============================================================
+# Task 25 — Function with multiple return values
+# ============================================================
+# Create a function:
+#
+#   min_max(numbers)
+#
+# The function should return TWO values:
+# - the smallest number
+# - the largest number
+#
+# Do NOT use min() or max().
+#
+# Example:
+# smallest, largest = min_max([5, 2, 9, 1, 7])
+#
+# smallest -> 1
+# largest  -> 9
+#
+# Assume the list is not empty.
+
+# Write your code below:
+
+
+# ============================================================
+# Task 26 — Temperature converter
+# ============================================================
+# Create a function:
+#
+#   convert_temperature(value, unit="C")
+#
+# If unit == "C":
+#   convert Celsius to Fahrenheit.
+#
+# Formula:
+# F = C * 9 / 5 + 32
+#
+# If unit == "F":
+#   convert Fahrenheit to Celsius.
+#
+# Formula:
+# C = (F - 32) * 5 / 9
+#
+# For any other unit, return None.
+#
+# Examples:
+# convert_temperature(0)       -> 32.0
+# convert_temperature(100)     -> 212.0
+# convert_temperature(32, "F") -> 0.0
+# convert_temperature(10, "K") -> None
+
+# Write your code below:
+
+
+# ============================================================
+# Task 27 — Find a value manually
+# ============================================================
+# Create a function:
+#
+#   find_value(numbers, target)
+#
+# Return the index of the FIRST occurrence of target.
+#
+# If target does not exist, return -1.
+#
+# Do NOT use:
+# - list.index()
+#
+# Examples:
+# find_value([10, 20, 30, 20], 20) -> 1
+# find_value([1, 2, 3], 5)          -> -1
+
+# Write your code below:
+
+
+# ============================================================
+# Task 28 — Remove all occurrences
+# ============================================================
+# Create a function:
+#
+#   remove_all(numbers, value)
+#
+# Remove ALL occurrences of value from the list.
+#
+# Example:
+#
+# numbers = [10, 20, 20, 30, 20]
+# remove_all(numbers, 20)
+#
+# numbers becomes:
+# [10, 30]
+#
+# You may use:
+# - while
+# - remove()
+# - count()
+#
+# Do NOT create a new list.
+
+# Write your code below:
+
+
+# ============================================================
+# Task 29 — Recursive multiplication
+# ============================================================
+# Create a recursive function:
+#
+#   multiply(a, b)
+#
+# Assume:
+# - a is an integer
+# - b is a non-negative integer
+#
+# Calculate a * b using addition and recursion.
+#
+# Do NOT use the * operator for multiplication.
+# Do NOT use loops.
+#
+# Idea:
+#
+# a * 4 = a + a + a + a
+#
+# Base case:
+# if b == 0:
+#     return 0
+#
+# Examples:
+# multiply(5, 3)  -> 15
+# multiply(10, 0) -> 0
+# multiply(-2, 4) -> -8
+
+# Write your code below:
+
+
+# ============================================================
+# Task 30 — Recursive Fibonacci
+# ============================================================
+# Create a recursive function:
+#
+#   fibonacci(n)
+#
+# Rules:
+# fibonacci(0) -> 0
+# fibonacci(1) -> 1
+#
+# For n > 1:
+#
+# fibonacci(n) =
+#     fibonacci(n - 1) + fibonacci(n - 2)
+#
+# Examples:
+# fibonacci(0) -> 0
+# fibonacci(1) -> 1
+# fibonacci(6) -> 8
+#
+# Do NOT use loops inside the function.
+
+# Write your code below:
+
+
+# ============================================================
+# Task 31 — math: hypotenuse
+# ============================================================
+# Create a function:
+#
+#   hypotenuse(a, b)
+#
+# Return the length of the hypotenuse of a
+# right triangle.
+#
+# Formula:
+#
+# c = sqrt(a^2 + b^2)
+#
+# Use math.sqrt().
+#
+# If a <= 0 or b <= 0:
+#     return None
+#
+# Examples:
+# hypotenuse(3, 4)  -> 5.0
+# hypotenuse(5, 12) -> 13.0
+# hypotenuse(-3, 4) -> None
+
+# Write your code below:
+
+
+# ============================================================
+# Task 32 — Function that modifies a list
+# ============================================================
+# Create a function:
+#
+#   add_student(students, name)
+#
+# The function should append name to students.
+#
+# It should NOT return the list.
+#
+# Example:
+#
+# students = ["Anna", "Alex"]
+#
+# result = add_student(students, "Mira")
+#
+# print(students)
+# print(result)
+#
+# Output:
+#
+# ['Anna', 'Alex', 'Mira']
+# None
+#
+# Think about:
+# - lists are mutable;
+# - the function changes the original list;
+# - a function without return returns None.
+
+# Write your code below:
+
+
+# ============================================================
+# Task 33 — Return versus print
+# ============================================================
+# Create TWO functions:
+#
+#   square_print(n)
+#   square_return(n)
+#
+# square_print(n):
+# - prints n ** 2
+# - does not explicitly return anything
+#
+# square_return(n):
+# - returns n ** 2
+#
+# Then run:
+#
+# a = square_print(5)
+# b = square_return(5)
+#
+# print(a)
+# print(b)
+#
+# Explain the difference between the outputs.
+#
+# This task is especially about understanding:
+#
+# print(...)
+#
+# versus
+#
+# return ...
+
+# Write your code below:
+
+
+# ============================================================
+# Task 34 — Empty return
+# ============================================================
+# Create a function:
+#
+#   check_age(age)
+#
+# If age < 0:
+#     print("Invalid age")
+#     return
+#
+# Otherwise:
+#     print("Valid age")
+#
+# Test:
+#
+# result1 = check_age(-5)
+# result2 = check_age(20)
+#
+# Print result1 and result2.
+#
+# Question:
+# What value does the function return in both cases?
+#
+# Remember:
+#
+# return
+#
+# is equivalent to:
+#
+# return None
+
+# Write your code below:
+
+
+# ============================================================
+# Task 35 — Number statistics with *args
+# ============================================================
+# Create a function:
+#
+#   number_statistics(*numbers)
+#
+# If no numbers are provided:
+#     return None
+#
+# Otherwise calculate:
+# - total
+# - average
+# - smallest
+# - largest
+#
+# Do NOT use:
+# - sum()
+# - min()
+# - max()
+#
+# Return all four values.
+#
+# Example:
+#
+# total, average, smallest, largest = \
+#     number_statistics(5, 10, 2, 13)
+#
+# Results:
+# total    -> 30
+# average  -> 7.5
+# smallest -> 2
+# largest  -> 13
+
+# Write your code below:
+
+
+# ============================================================
+# Task 36 — Recursive sum of list elements
+# ============================================================
+# Create:
+#
+#   recursive_sum(numbers)
+#
+# Examples:
+#
+# recursive_sum([1, 2, 3, 4]) -> 10
+# recursive_sum([10])         -> 10
+# recursive_sum([])           -> 0
+#
+# Use recursion only.
+#
+# Do NOT use:
+# - sum()
+# - for
+# - while
+#
+# Hint:
+#
+# [1, 2, 3, 4]
+#
+# can be thought of as:
+#
+# 1 + sum([2, 3, 4])
+
+# Write your code below:
+
+
+# ============================================================
+# Task 37 — Reverse a list using list methods
+# ============================================================
+# Create a function:
+#
+#   reverse_list(numbers)
+#
+# Reverse the list IN PLACE using:
+#
+#   .reverse()
+#
+# The function should not explicitly return anything.
+#
+# Example:
+#
+# numbers = [1, 2, 3, 4]
+#
+# result = reverse_list(numbers)
+#
+# print(numbers)
+# print(result)
+#
+# Output:
+#
+# [4, 3, 2, 1]
+# None
+
+# Write your code below:
+
+
+# ============================================================
+# Task 38 — Math: nearest integer
+# ============================================================
+# Import math.
+#
+# Create a function:
+#
+#   rounding_report(number)
+#
+# Print:
+#
+# Original: ...
+# Floor: ...
+# Ceil: ...
+#
+# Example:
+#
+# rounding_report(4.7)
+#
+# Output:
+#
+# Original: 4.7
+# Floor: 4
+# Ceil: 5
+#
+# Test also:
+#
+# rounding_report(-4.7)
+#
+# Pay attention to how floor() behaves
+# with negative numbers.
+
+# Write your code below:
